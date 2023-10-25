@@ -1,9 +1,13 @@
 spring:
   application:
     name: eureka-server
+  freemarker:
+    template-loader-path: classpath:/templates/
+    prefer-file-system-access: false
 server:
   port: ${PORT:8761}
 eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+
